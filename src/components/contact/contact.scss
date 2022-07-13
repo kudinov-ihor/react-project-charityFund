@@ -1,0 +1,73 @@
+@import '../../variables.scss';
+
+.contacts {
+    margin-top: 120px;
+    &-title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 40px;
+        color: #212121;
+    }
+    &-location, &-phone, &-mail {
+        display: flex;
+        align-items:center;
+    }
+    &-wrapper {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            .icon {
+                margin-right: 20px;
+                font-size: 1.7em;
+                padding: 10px;
+                border: 1px solid $header-navigation-color;
+                color: $header-navigation-color ;
+                border-radius: 100%;
+            }
+            span {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 30px;
+                color: #212121;
+            }
+        }
+        &-map {
+            iframe {
+                border: none;
+                width: 600px;
+                height: 450px;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 992px) {
+    .contacts {
+        &-wrapper {
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+    } 
+    
+}
+@media screen and (max-width:768px) {
+    .contacts {
+        &-wrapper {
+            flex-wrap: wrap;
+            gap: 20px;
+            &-map {
+                width: 100%;
+            }
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+    
+}

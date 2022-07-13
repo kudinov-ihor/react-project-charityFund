@@ -1,0 +1,100 @@
+@import '../../mixins.scss';
+@import '../../variables.scss';
+
+
+.promo {
+    
+    display: block;
+    height: 600px;
+    padding: 50px 0;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+        background: rgba( 247, 244, 244, 0.05 );
+        min-height: 500px;
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    &-title {
+        font-size: 60px;
+        text-align: center;
+        color: #fff;
+        line-height: 70px;
+        font-weight: 800;
+        letter-spacing: .02em;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    /* CSS */
+    .button-52 {
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 13px 20px 13px;
+      outline: 0;
+      border: 1px solid black;
+      cursor: pointer;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-52:after {
+      content: "";
+      background-color: $promoBtn;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+    }
+    
+    .button-52:hover:after {
+      top: 0px;
+      left: 0px;
+    }
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    .promo {
+        .photo {
+            height: 500px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promo {
+        &-title {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promo {
+        .photo {
+            height: 400px;
+        }
+        &-title {
+            font-size: 30px;
+            line-height: 45px;
+        }
+    }
+    
+}

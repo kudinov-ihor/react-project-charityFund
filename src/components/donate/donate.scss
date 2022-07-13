@@ -1,0 +1,70 @@
+@import '../../mixins.scss';
+@import '../../variables.scss';
+.donate {
+    margin-top: 120px;
+    &-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        padding: 84px 70px;
+        background: url('../../assets/img/donate_bg.webp') center center / cover no-repeat;
+        -webkit-box-shadow: 2px 3px 15px -4px #000000; 
+        box-shadow: 2px 3px 15px -4px #000000;
+        border-radius: 20px;
+    }
+    &-title {
+        max-width: 80%;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 55px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+    &-button {
+        @include mainBtn;
+    }
+    &-link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .donate {
+        &-wrapper {
+            padding: 75px 30px;
+        }
+        &-title {
+            font-size: 35px;
+            line-height: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .donate {
+        &-title {
+            text-align: center;
+        }
+        &-wrapper {
+            padding: 55px 30px;
+            flex-wrap: wrap-reverse;
+            gap: 20px;
+        }
+    }   
+}
+
+@media screen and (max-width: 576px) {
+    .donate {
+        &-wrapper { 
+            padding: 35px 0;
+            max-width: 100%;
+        }
+        &-title { 
+            font-size: 19px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.ReactGridGallery {
+    position: relative;
+    margin-top: 120px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .ReactGridGallery_tile {
+        background: none;
+        img {
+            object-fit: cover;
+        }
+    }
+}

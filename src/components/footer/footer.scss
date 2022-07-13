@@ -1,0 +1,206 @@
+@import '../../mixins.scss';
+@import '../../variables.scss';
+
+.footer {
+    margin-top: 120px;
+    background: $main-color;
+    .btn-close {
+        width: 30px;
+    }
+    &-wrapper {
+        padding-top: 70px;
+        display: flex;
+        gap: 90px;
+        justify-content: space-between;
+        &-info {
+            max-width: 35%;
+                .company-name {
+                    font-family: Marck Script;
+                    font-weight: 400;
+                    font-size: 35px;
+                    z-index: 1;
+                    color: #fff;
+
+                }
+            &-descr {
+                margin-top: 36px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+            &-icons {
+                margin-top: 25px;
+                .item {
+                    color: #fff;
+                    font-size: 22px;
+                    border: 1px solid #fff;
+                    padding: 8px;
+                }
+            }
+        }
+        &-nav {
+            &-title {
+                
+                font-weight: 700;
+                font-size: 22px;
+                color: #FFFFFF;
+            }
+            &-list {
+                margin-top: 36px;
+                list-style: none;
+                &-item {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &-form {
+
+            &-title {
+                font-weight: 700;
+                font-size: 22px;
+                color: #FFFFFF;
+            }
+            &-descr {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+            form {
+                margin-top: 25px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                box-sizing: border-box;
+
+                input {
+                    background: none;
+                    border: 1.5px solid #696969;
+                    border-radius: 100px;
+                    text-align: center;
+                    padding: 8px;
+                    width: 100%;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #EEEEEE;
+                    &:focus-visible {
+                        border:none;
+                        outline: none;
+                    }
+
+                }
+                input[type="submit"] {
+                    margin-top: 20px;
+
+                    @include mainBtn;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &-contact {
+        padding: 70px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        align-items:center;
+        .icon {
+            padding: 15px;
+            font-size: 30px;
+            color: #fff;
+            border-radius: 3px;
+        }
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        &-title {
+            
+            font-weight: 700;
+            font-size: 25px;
+            color: #FFFFFF;
+            white-space: nowrap;
+        }
+        &-location {
+            display: flex;
+            align-items:center;
+        }
+        &-phone {
+            display: flex;
+            align-items:center;
+            white-space: nowrap;
+        }
+        &-mail {
+            display: flex;
+            align-items:center;
+        }
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .footer {
+        &-wrapper {
+            gap: 40px;
+        }
+        &-contact {
+            gap: 40px;
+        }
+    }   
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        &-wrapper {
+            &-info {
+                display: none;
+            }
+        }
+        &-contact {
+            gap: 0;
+            justify-content: center;
+            flex-direction: column;
+            align-items:center;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .footer {
+        &-wrapper {
+            flex-direction:column ;
+        }
+        &-contact {
+            gap: 0;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            &-title {
+                align-self: center;
+            }
+            &-location {
+                margin-top: 15px;
+            }
+        }
+    }
+    
+}

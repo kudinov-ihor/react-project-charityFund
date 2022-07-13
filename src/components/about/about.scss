@@ -1,0 +1,275 @@
+@import '../../mixins.scss';
+@import '../../variables.scss';
+
+.about {
+    background-attachment: fixed;
+    padding-top: 100px;
+    &-page {
+
+        &-photo {
+            position: sticky;
+            top: 20px;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 62px;
+    }
+    &-photo {
+        max-height: 650px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    &-info {
+        
+        &-heading {
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #212121;
+            
+        }
+        &-title {
+            font-family: Cormorant SC;
+            margin-top: 25px;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 35px;
+            color: #212121;
+        }
+        &-descr {
+            margin-top: 30px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #212121;
+        }
+        &-statut {
+            &-btn {
+                margin-top: 25px;
+                @include mainBtn;
+            }
+        }
+        &-wallet {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        &-donate {
+            margin-top: 25px;
+            @include mainBtn;
+
+        }
+        &-list {
+            margin-top: 40px;
+            list-style: none;
+            &-item {
+                margin-top: 20px;
+                position: relative;
+                font-weight: 400;
+                font-size: 18px;
+                color: #696969;
+                margin-left: 40px;
+                &::before {
+                    content: '';
+                    width: 22px;
+                    height: 22px;
+                    position: absolute;
+                    left: -40px;
+                    background: url('../../assets/icons/about_list_item.svg');
+                }
+            }
+        }
+        &-link {
+            text-decoration: none;
+            
+            &-button {
+                cursor: pointer;
+                margin-top: 40px;
+                @include mainBtn;
+            }
+        }
+    }
+    &-slider {
+        margin-top: 120px;
+        .slick-slide {
+            display: flex;
+            margin: 0 25px;
+        }
+        &-item {
+            display: flex;
+            padding: 30px 15px;
+            background: #FFFFFF;
+            box-shadow: 3px 2px 35px rgba(0, 27, 85, 0.08);
+            border-radius: 5px;
+            &-icon {
+                min-width: 70px;
+                height: 70px;
+                background: #F9801E;
+                border-radius: 1000%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                margin-right: 30px;
+                img {
+                    width: 44px;
+                    height: 44px;
+                }        
+
+            }
+            &-content {
+                &-title {
+                    font-weight: 600;
+                    font-size: 22px;
+                    color: #212121;
+                }
+                &-descr {
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #696969;
+                }
+                &-link {
+                    display: block;
+                    text-decoration: none;
+                    margin-top: 20px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #696969;
+                }
+            }
+        }
+    }
+    &-cards {
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+
+        &-item {
+            border-radius: 15px;
+            background: #000214;
+            padding: 70px 60px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            &:nth-child(1) {
+                background: url('../../assets/img/about_project_church.webp') center center / cover no-repeat;
+            }
+            &:nth-child(2) {
+                background: url('../../assets/img/index_about_castle.webp') center center / cover no-repeat;
+            }
+            &-title {
+                text-align: center;
+                font-weight: 600;
+                font-size: 30px;
+                color: #FFFFFF;
+            }
+            &-descr {
+                border-radius: 10px;
+                margin-top: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                font-size: 16px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            &-button {
+                margin-top: 30px;
+                @include mainBtn;
+            }
+            &-link {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 18px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 0 0;
+        padding: 1rem 0;
+        
+        list-style-type: none;
+        
+            li {
+                margin: 0 0.25rem;
+            }
+        
+            button {
+                cursor: pointer;
+                display: block;
+                width: 20px;
+                height: 5px;
+                padding: 0;
+                
+                border: none;
+                background: rgba(105, 105, 105, 0.5);
+                opacity: 0.6;
+                border-radius: 30px;
+                
+                text-indent: -9999px;
+                transition: all .3s ease;
+            }
+        
+            li.slick-active button {
+                background-color: red;
+                width: 30px;
+            }
+        
+    }
+}
+
+@media screen and (max-width: 1200px)  {
+    .about {
+        &-cards {
+            &-item {
+                padding: 40px 40px;
+            }
+        }
+    }   
+}
+@media screen and (max-width: 992px) {
+    .about {
+        &-photo {
+            display: none;
+        }
+        &-cards {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .about {
+        &-info {
+            &-title {
+                font-size: 21px;
+            }
+            &-list {
+                &-item {
+                    margin-left: 0;
+                }
+            }
+        }
+        &-cards {
+            &-item {
+                padding: 40px 5px;
+                &-title {
+                    font-size: 25px;
+                }
+                &-descr {
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    
+}

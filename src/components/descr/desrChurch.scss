@@ -1,0 +1,35 @@
+.church-content {
+    margin-top: 100px;
+    &-text {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &-list {
+        margin-top: 20px;
+        list-style: none;
+        &-item {
+            position: relative;
+            font-weight: 400;
+            font-size: 18px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            &::before {
+                content: '';
+                width: 22px;
+                height: 22px;
+                position: absolute;
+                left: -40px;
+                background: url('../../assets/icons/about_list_item.svg');
+            }
+        }
+    }
+    .sketchfab-embed-wrapper {
+        margin-top: 75px;
+        width: 100%;
+        iframe {
+            width: 100%;
+            min-height: 450px;
+        }
+    }
+}

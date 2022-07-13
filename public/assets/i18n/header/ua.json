@@ -1,0 +1,24 @@
+{
+    "header" : {
+        "mailUs" : "Напишіть нам",
+        "callUs" : "Зателефонуйте нам"
+    },
+    "navigation" : [
+        {"id" : 1, "name" : "Головна", "link" : "/"},
+        {"id" : 2, "name" : "про фонд", "link" : "/about"},
+        {"id" : 3, "name" : "проєкти", "link" : "/project/project-church"},
+        {"id" : 4, "name" : "контакти", "link" : "/contacts"}
+    ],
+    "submenu" : [
+        {"id" : 1, "name" : "Церква Різдва Христового В Тернополі", "link" : "/project/project-church"},
+        {"id" : 1, "name" : "Червоногородський Замок", "link" : "/project/project-castle"}
+    ],
+    "headerNav": {
+        "home" : "Головна",
+        "aboutUs" : "про фонд",
+        "projects" : "проєкти",
+        "projectCastle" : "Червоногородський Замок",
+        "projectChurch" : "Церква Різдва Христового В Тернополі",
+        "contacts" : "контакти"
+    } 
+}

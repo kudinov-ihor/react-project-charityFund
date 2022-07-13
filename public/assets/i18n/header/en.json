@@ -1,0 +1,24 @@
+{
+    "header" : {
+        "mailUs" : "Mail Us",
+        "callUs" : "Call Us"
+    },
+    "navigation" : [
+        {"id" : 1, "name" : "home", "link" : "/"},
+        {"id" : 2, "name" : "about us", "link" : "/about"},
+        {"id" : 3, "name" : "projects", "link" : "/project/project-church"},
+        {"id" : 4, "name" : "contacts", "link" : "/contacts"}
+    ],  
+    "submenu" : [
+        {"id" : 1, "name" : "Church of the Nativity of Christ in Ternopil", "link" : "/project/project-church"},
+        {"id" : 1, "name" : "Chervonohrad Castle", "link" : "/project/project-castle"}
+    ],
+    "headerNav": {
+        "home" : "home",
+        "aboutUs" : "about us",
+        "projects" : "projects",
+        "projectCastle" : "Chervonohrad Castle",
+        "projectChurch" : "Church of the Nativity of Christ in Ternopil",
+        "contacts" : "contacts"
+    } 
+}

@@ -1,0 +1,53 @@
+@mixin general-button {
+    background: linear-gradient(96.98deg, #FF3A7F 0%, #FF5F45 100%) !important;
+    border-radius: 100px;
+
+    border:none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-size: 400%;
+    background-position: 90% 0;
+    transition: all .8s;
+    &:hover {
+        background-position: 185% 50%;
+        background: red;
+        cursor: pointer;
+    }
+
+    
+}
+
+@mixin mainBtn {
+    padding: 5px 10px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;   
+    &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            border-radius: 20px;
+            background: $header-navigation-color;
+            transition: all .35s;
+            z-index: -1;
+    }
+    &:hover {
+        background: $header-navigation-color;
+        color: #fff;
+        z-index: 1;
+
+    }
+}

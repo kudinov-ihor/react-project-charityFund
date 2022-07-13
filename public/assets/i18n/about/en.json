@@ -1,0 +1,28 @@
+{
+    "title" : "about us",
+    "autograph" : "'Charity suffers, it is benign; charity does not envy, charity does not boast, does not inflate; he does nothing wrong, he does not seek his own, he is not irritated, he does not consider evil; someone does not rejoice in injustice, but rejoices in truth; He endures all things, believes all things, expects all things, endures all things '(1 Cor. 13: 4-7).",
+    "aboutContent" : [
+        {"id" : 1, "content" : "The fund was established with the blessing of the Bishop of Ternopil UAOC Tikhon (Petranyuk)."},
+        {"id" : 2, "content" : "The main purpose of the Foundation is to carry out charitable activities in the interests of the citizens of Ukraine, the development of religious communities in Ukraine, providing material, financial and organizational assistance to Orthodox religious organizations."},
+        {"id" : 3, "content" : "The main recipient of charitable assistance is the Ternopil-Buchach Eparchy of the PCU."},
+        {"id" : 4, "content" : "By the decision of the Local Unification Council of the Orthodox Church of Ukraine of December 15, 2018, the Orthodox Church of Ukraine was established and its Charter was approved."},
+        {"id" : 5, "content" : "The Orthodox Church of Ukraine operates through a number of religious centers, one of which is the Ternopil-Buchach Eparchy, which in the official business sphere is represented by a legal entity - a religious organization 'Ternopil-Buchach Eparchy of the Ukrainian Orthodox Church (Orthodox Church of Ukraine)'.The Department implements a number of projects for the restoration and restoration of cultural heritage of Ukraine, organizes the construction of new churches and other religious buildings in the Ternopil region. The construction projects in which it is proposed to invest will be implemented at facilities owned by the Ternopil-Buchach Diocese and individual religious organizations (parishes, monasteries, etc.) that are canonically subordinated to this religious center."}
+
+    ],
+    "paymentMethods" : [
+        "JSC CB 'PRIVATBANK' (USREOU Bank 14360570, bank code 338783) account № UA653387830000026001055117278 (Current account), currency (Ukrainian hryvnia), recipient of BO 'CHRISTIAN CHARITABLE FUND'",
+        "JSC CB 'PRIVATBANK' (USREOU Bank 14360570, bank code 338783) account № UA853387830000026002055128233 (Current account), currency EUR (Euro), recipient of BO 'CHRISTIAN CHARITABLE FUND'GOOD'",
+        "JSC CB 'PRIVATBANK' (USREOU Bank 14360570, bank code 338783) account № UA873387830000026001055120180 (Current account), currency USD (US Dollar), recipient of BO 'CHRISTIAN CHARITABLE FUND'"
+    ],
+    "aboutPage" : {
+        "сharter" : "Watch Charter",
+        "paymentMethods" : "Payment details:" 
+    },
+    "aboutCardsTitle" : [
+        {"id" : 1, "title" : "Church of the Nativity of Christ in Ternopil", "descr" : "One of the oldest religious buildings in Ternopil, an architectural monument of national importance in Ukraine, the cathedral of the Ternopil-Buchach Eparchy of the Orthodox Church of Ukraine", "src" : "http://localhost:3000/static/media/about_project_church.6357622c62e4378b4a9a.jpg", "link" : "/project/project-church"},
+        {"id" : 2, "title" : "Chervonohrad Castle", "descr" : "Defensive structure near the disappeared former city of Chervonohrad, in the first half of the XIX century. rebuilt into a palace.", "src" : "http://localhost:3000/static/media/index_about_castle.5deadf4243b31423d500.jpg", "link" : "/project/project-castle"}
+    ]
+
+
+    
+}
